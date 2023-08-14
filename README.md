@@ -23,3 +23,6 @@ Features
     •Option to start a new game at any time.
     •Keeps track of the player's high score.
     •Provides both visual and auditory cues for each step.
+Webpage
+
+You can play the Simon Game online by visiting the following webpage: https://abhishekbankar28.github.io/Simon_game/

@@ -3,12 +3,15 @@ let gamePattern = [];
 let userClickedPattern = [];
 let started = false;        
 let level = 0;
-$(document).keypress(function(){
-    if(!started){
-        $("#title").text("Level "+level);
+function startGame() {
+    if (!started) {
+        $("#title").text("Level " + level);
         newSequence();
         started = true;
     }
+}
+$(document).keypress(function () {
+    startGame();
 });
 
 $(".btn").click(function(){
@@ -63,3 +66,7 @@ function startOver(){
     gamePattern = [];
     started = false;
 }
+
+$("#title, body").on("click", function () {
+    startGame();
+});

@@ -26,7 +26,7 @@ function checkAnswer(currentLevel){
         if (userClickedPattern.length === gamePattern.length){
             setTimeout(function () {
               newSequence();
-            }, 1000);
+            }, 1200);
         } 
     } 
     else{
@@ -37,7 +37,9 @@ function checkAnswer(currentLevel){
         setTimeout(function () {
         $("body").removeClass("game-over");
       }, 300);
-      startOver();
+      setTimeout(function () {
+        startOver();
+    }, 1200);
     }
 }
 function newSequence(){
@@ -65,6 +67,7 @@ function startOver(){
     level = 0;
     gamePattern = [];
     started = false;
+    
 }
 
 $("#title, body").on("click", function () {

@@ -39,7 +39,7 @@ function checkAnswer(currentLevel){
       }, 300);
       setTimeout(function () {
         startOver();
-    }, 1200);
+    }, 1800);
     }
 }
 function newSequence(){
